@@ -27,11 +27,15 @@ route.get(
 );
 
 // admin initiate crud
-route.post("/api/initiate-crud", initiateController.initoperation);
+route.post("/api/initiate-crud",  userController.checkIfLoggedin,
+userController.grantAccess("createAny", "posts"),
+initiateController.initoperation);
 
 // super-admin action crud
-route.get("/api/action-crud", actionController.findAdminRequest);
-route.post("/api/action-crud", actionController.actionoperation);
+route.get("/api/action-crud",  userController.checkIfLoggedin,
+userController.grantAccess("readAny", "posts"), actionController.findAdminRequest);
+route.post("/api/action-crud",  userController.checkIfLoggedin,
+userController.grantAccess("createAny", "posts"), actionController.actionoperation);
 
 // super admin API
 route.get(
