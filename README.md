@@ -3,7 +3,7 @@
 
 ## API details:
 
-Used JWT webtoken for User Authentication
+Used JWT webtoken for User Authentication. \
 Used [Access Control](https://www.npmjs.com/package/accesscontrol) library for ROLE based Authorization
 Having role defined as 
 ```
@@ -58,5 +58,6 @@ API to Initiate CRUD of posts on users' behalf. initial status  will be adminreq
 ##### /api/action-crud
 ###### access by user having role as SUPER-ADMIN
 API to Approve actions initiated by admin
+
 ![image](https://user-images.githubusercontent.com/44355278/122184927-53c34380-ceaa-11eb-8bd2-e17d517210c4.png)
 
