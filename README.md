@@ -3,6 +3,19 @@
 
 ## API details:
 
+### Setup
+```
+npm install
+node server.js
+```
+
+update below details on .env
+```
+MONGO_URI = <DB URL>
+JWT_SECRET=<Your Secret Key>
+```
+
+
 Used JWT webtoken for User Authentication. \
 Used [Access Control](https://www.npmjs.com/package/accesscontrol) library for ROLE based Authorization
 Having role defined as 
