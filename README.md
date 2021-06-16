@@ -74,3 +74,8 @@ API to Approve actions initiated by admin
 
 ![image](https://user-images.githubusercontent.com/44355278/122184927-53c34380-ceaa-11eb-8bd2-e17d517210c4.png)
 
+
+In-Progress:
+Audit log,
+Analytics,
+Test-cases
