@@ -75,7 +75,3 @@ API to Approve actions initiated by admin
 ![image](https://user-images.githubusercontent.com/44355278/122184927-53c34380-ceaa-11eb-8bd2-e17d517210c4.png)
 
 
-In-Progress:\
-Audit log(using [trial](https://github.com/nearform/trail#readme) ),
-Analytics(using [cube.js Api](https://real-time-dashboard.cube.dev/cube-js-api-with-mongo-db), [meiliSearch](https://docs.meilisearch.com)),
-Test-cases
