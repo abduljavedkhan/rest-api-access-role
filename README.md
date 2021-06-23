@@ -108,3 +108,5 @@ Response:
 ![image](https://user-images.githubusercontent.com/44355278/123045847-064e5580-d419-11eb-9fab-2e84b0a1972f.png)
 
 
+Note:
+By checking the status in response of /api/action-crud API perform further operation on /post API CRUD
