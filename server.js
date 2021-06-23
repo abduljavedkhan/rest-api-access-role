@@ -3,7 +3,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const app = express();
 require("dotenv").config();
-
+const helmet = require("helmet");
 const ExpressBrute = require("express-brute");
 const connectDB = require("./app/database/connection");
 const ResponseBuilder = require("./app/models/CustomResponse/ResponseBuilder");
@@ -17,13 +17,14 @@ const corsOptions = {
   methods: ["GET", "POST"],
   allowedHeaders: ["Access-Control-Allow-Origin", "Content-Type"],
 };
-
+app.use(helmet());
 // mongodb connection
 connectDB();
 
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 //middle ware
 app.use(async function (req, res, next) {
   if (req.headers["authorization"]) {
