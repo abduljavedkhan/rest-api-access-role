@@ -18,6 +18,6 @@ const operationSchema = new mongoose.Schema({
   updatedAt: { type: Date },
 });
 
-const IACrud = mongoose.model("initiate_action_crud", operationSchema);
+const IACrud = mongoose.model("IACrud", operationSchema);
 
 module.exports = IACrud;

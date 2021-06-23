@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "271ad1a6-acd0-4d3e-8ad4-be0415c9cf87",
+		"name": "Rest-API-assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMjY5MTY5NmZlOTM1NWNmNDg0MjYiLCJpYXQiOjE2MjQ0MTIyOTIsImV4cCI6MTYyNDQ5ODY5Mn0.byJaF4BhP3J23QEtsyTYTWL4nI80NxfQltON523Pk1c",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"message\": \"Wow, i just leant TypeGraphQL and made a project using Node-postgres, TypeGraphQL and Apollo Server\",\r\n\"username\" : \"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rest-api-assignments.herokuapp.com/api/user/posts",
+					"protocol": "https",
+					"host": [
+						"rest-api-assignments",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMjY5MTY5NmZlOTM1NWNmNDg0MjYiLCJpYXQiOjE2MjQ0MTIyOTIsImV4cCI6MTYyNDQ5ODY5Mn0.byJaF4BhP3J23QEtsyTYTWL4nI80NxfQltON523Pk1c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://rest-api-assignments.herokuapp.com/api/user/posts",
+					"protocol": "https",
+					"host": [
+						"rest-api-assignments",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMjY5MTY5NmZlOTM1NWNmNDg0MjYiLCJpYXQiOjE2MjQ0MTIyOTIsImV4cCI6MTYyNDQ5ODY5Mn0.byJaF4BhP3J23QEtsyTYTWL4nI80NxfQltON523Pk1c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://rest-api-assignments.herokuapp.com/api/user/posts/60d2909b32e4c00015039a43",
+					"protocol": "https",
+					"host": [
+						"rest-api-assignments",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"posts",
+						"60d2909b32e4c00015039a43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGM5OWZkZjkwNDYxMzRhNDg5MmE5NjEiLCJpYXQiOjE2MjM4MjY0MTgsImV4cCI6MTYyMzkxMjgxOH0.qLSTuqGBbyX5k7SjOmJ61BHWOdgkRHfWkW3AUCCrmBk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"message\":\"Hi there, new record\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4321/api/admin/posts/60c99b823e8c391904f8000d",
+					"host": [
+						"localhost"
+					],
+					"port": "4321",
+					"path": [
+						"api",
+						"admin",
+						"posts",
+						"60c99b823e8c391904f8000d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4321/api/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "4321",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "user",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rest-api-assignments.herokuapp.com/api/login",
+					"protocol": "https",
+					"host": [
+						"rest-api-assignments",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4321/api/initiate-crud",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMWVjZDY5NmZlOTM1NWNmNDg0MjQiLCJpYXQiOjE2MjQ0MjY2NzEsImV4cCI6MTYyNDUxMzA3MX0.xNZ-r4vJP6fTNXqDePb4rTpDTXDZ8VNCKrY2c4eusnI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"postid\":\"60d290ce32e4c00015039a44\",\"operation\":\"update\",\"status\":\"adminrequest\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4321/api/initiate-crud",
+					"host": [
+						"localhost"
+					],
+					"port": "4321",
+					"path": [
+						"api",
+						"initiate-crud"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super Admin Action(use Super Admin Auth key))",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMWVjZDY5NmZlOTM1NWNmNDg0MjQiLCJpYXQiOjE2MjQ0MjY2NzEsImV4cCI6MTYyNDUxMzA3MX0.xNZ-r4vJP6fTNXqDePb4rTpDTXDZ8VNCKrY2c4eusnI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"postid\":\"60d290ce32e4c00015039a44\",\"operation\":\"update\",\"status\":\"reject\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4321/api/action-crud",
+					"host": [
+						"localhost"
+					],
+					"port": "4321",
+					"path": [
+						"api",
+						"action-crud"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin initiate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMWVjZDY5NmZlOTM1NWNmNDg0MjQiLCJpYXQiOjE2MjQ0MjY2NzEsImV4cCI6MTYyNDUxMzA3MX0.xNZ-r4vJP6fTNXqDePb4rTpDTXDZ8VNCKrY2c4eusnI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"postid\":\"60d290ce32e4c00015039a44\",\"operation\":\"update\",\"status\":\"adminrequest\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4321/api/initiate-crud",
+					"host": [
+						"localhost"
+					],
+					"port": "4321",
+					"path": [
+						"api",
+						"initiate-crud"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -6,18 +6,18 @@ const MESSAGES = require("../models/CustomResponse/ResponseMessages");
 const CODES = require("../models/CustomResponse/ResponseCode");
 const STATUS = { SUCCESS: "success", FAIL: "fail" };
 
-const InitOP = require("../models/initiate-action-crud");
+const IACrud = require("../models/initiateactioncrud");
 
 exports.initoperation = async (req, res, next) => {
   // new reqs
-  const newReq = new InitOP({
+  const newReq = new IACrud({
     postid: req.body.postid,
     operation: req.body.operation,
     status: "adminrequest",
-    createdAt: Date.now,
+    createdAt: new Date()
   });
 
-  InitOP.save(newReq)
+  newReq.save(newReq)
     .then((data) => {
       let successResponse = new ResponseBuilder();
       successResponse.setStatusCode(CODES.SUCCESS);

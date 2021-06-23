@@ -5,10 +5,10 @@ const Response = require("../models/CustomResponse/Response");
 const MESSAGES = require("../models/CustomResponse/ResponseMessages");
 const CODES = require("../models/CustomResponse/ResponseCode");
 const STATUS = { SUCCESS: "success", FAIL: "fail" };
-const ActionOP = require("../models/initiate-action-crud");
+const IACrud = require("../models/initiateactioncrud");
 
 exports.findAdminRequest = async (req, res, next) => {
-  ActionOP.find({ status: "adminrequest" })
+  IACrud.find({ status: "adminrequest" })
     .then((data) => {
       res.status(200).send({
         message: "List of request ",
@@ -24,14 +24,14 @@ exports.findAdminRequest = async (req, res, next) => {
 
 exports.actionoperation = async (req, res, next) => {
   // new reqs
-  const newReq = new InitOP({
+  const newReq = new IACrud({
     postid: req.body.postid,
     operation: req.body.operation,
     status: req.body.operation || "done", // default is done if not rejetected
-    updatedAt: Date.now,
+    updatedAt: new Date(),
   });
 
-  ActionOP.save(newReq)
+  newReq.save(newReq)
     .then((data) => {
       let successResponse = new ResponseBuilder();
       successResponse.setStatusCode(CODES.SUCCESS);
