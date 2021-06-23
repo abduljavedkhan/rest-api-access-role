@@ -2,7 +2,7 @@
 ##### Requirement: [link](https://www.notion.so/Backend-Assignment-eac47d2e6e7544e2ac98d8ba117efd02)
 
 ## API details:
-
+Live Hosted URL: https://rest-api-assignments.herokuapp.com/
 ### Setup
 ```
 npm install
