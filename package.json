@@ -1,0 +1,42 @@
+{
+  "name": "rest-api-assignments",
+  "version": "1.0.0",
+  "description": "```\r npm install\r node server.js\r ```",
+  "main": "roles.js",
+  "author":"Javed",
+  "dependencies": {
+    "acl2": "^2.0.0",
+    "accesscontrol": "^2.2.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-brute": "^1.0.1",
+    "express-jwt": "^6.0.0",
+    "express-jwt-authz": "^2.4.1",
+    "helmet": "^4.6.0",
+    "http-errors": "^1.8.0",
+    "init": "^0.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^2.0.3",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abduljavedkhan/rest-api-assignments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abduljavedkhan/rest-api-assignments/issues"
+  },
+  "homepage": "https://github.com/abduljavedkhan/rest-api-assignments#readme"
+}
