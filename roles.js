@@ -8,15 +8,15 @@ exports.roles = (function () {
     .readOwn("posts")
     .grant("admin")
     .extend("user")
-    .createAny("posts")
-    .readAny("posts")
-    .updateAny("posts")
-    .deleteAny("posts")    
+    .createAny("posts-a")
+    .readAny("posts-a")
+    .updateAny("posts-a")
+    .deleteAny("posts-a")    
     .grant("superadmin")
     .extend("admin")
-    .createAny("posts")
-    .readAny("posts")
-    .updateAny("posts")
-    .deleteAny("posts");
+    .createAny("posts-sa")
+    .readAny("posts-sa")
+    .updateAny("posts-sa")
+    .deleteAny("posts-sa");
   return ac;
 })();
