@@ -59,7 +59,14 @@ API for Social Media Post Creation
 
 
 ### Post Request With Authorization Token
-![image](https://user-images.githubusercontent.com/44355278/122185330-a4d33780-ceaa-11eb-8350-c05f90457bdc.png)
+Request
+```
+{
+"message": "Wow, i just leant TypeGraphQL and made a project using Node-postgres, TypeGraphQL and Apollo Server",
+"username" : "user"
+}
+```
+![image](https://user-images.githubusercontent.com/44355278/123022721-d80a4f00-d3f3-11eb-9ef1-741f42bcca4a.png)
 
 ##### /api/initiate-crud
 ###### access by user having role as ADMIN
