@@ -12,7 +12,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMjY5MTY5NmZlOTM1NWNmNDg0MjYiLCJpYXQiOjE2MjQ0MTIyOTIsImV4cCI6MTYyNDQ5ODY5Mn0.byJaF4BhP3J23QEtsyTYTWL4nI80NxfQltON523Pk1c",
+						"value": "",
 						"type": "text",
 						"disabled": true
 					}
@@ -50,8 +50,9 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMjY5MTY5NmZlOTM1NWNmNDg0MjYiLCJpYXQiOjE2MjQ0MTIyOTIsImV4cCI6MTYyNDQ5ODY5Mn0.byJaF4BhP3J23QEtsyTYTWL4nI80NxfQltON523Pk1c",
-						"type": "text"
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"url": {
@@ -78,8 +79,9 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMjY5MTY5NmZlOTM1NWNmNDg0MjYiLCJpYXQiOjE2MjQ0MTIyOTIsImV4cCI6MTYyNDQ5ODY5Mn0.byJaF4BhP3J23QEtsyTYTWL4nI80NxfQltON523Pk1c",
-						"type": "text"
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"url": {
@@ -107,8 +109,9 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGM5OWZkZjkwNDYxMzRhNDg5MmE5NjEiLCJpYXQiOjE2MjM4MjY0MTgsImV4cCI6MTYyMzkxMjgxOH0.qLSTuqGBbyX5k7SjOmJ61BHWOdgkRHfWkW3AUCCrmBk",
-						"type": "text"
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
@@ -190,12 +193,12 @@
 					"urlencoded": [
 						{
 							"key": "email",
-							"value": "user",
+							"value": "admin",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "user",
+							"value": "admin",
 							"type": "text"
 						},
 						{
@@ -234,8 +237,9 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMWVjZDY5NmZlOTM1NWNmNDg0MjQiLCJpYXQiOjE2MjQ0MjY2NzEsImV4cCI6MTYyNDUxMzA3MX0.xNZ-r4vJP6fTNXqDePb4rTpDTXDZ8VNCKrY2c4eusnI",
-						"type": "text"
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
@@ -268,13 +272,14 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMWVjZDY5NmZlOTM1NWNmNDg0MjQiLCJpYXQiOjE2MjQ0MjY2NzEsImV4cCI6MTYyNDUxMzA3MX0.xNZ-r4vJP6fTNXqDePb4rTpDTXDZ8VNCKrY2c4eusnI",
-						"type": "text"
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"postid\":\"60d290ce32e4c00015039a44\",\"operation\":\"update\",\"status\":\"reject\"\r\n}",
+					"raw": "{\r\n    \"postid\": \"60d290ce32e4c00015039a44\",\r\n    \"operation\": \"update\",\r\n    \"status\": \"reject\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -282,11 +287,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:4321/api/action-crud",
+					"raw": "https://rest-api-assignments.herokuapp.com/api/action-crud",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"rest-api-assignments",
+						"herokuapp",
+						"com"
 					],
-					"port": "4321",
 					"path": [
 						"api",
 						"action-crud"
@@ -302,13 +309,14 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMWVjZDY5NmZlOTM1NWNmNDg0MjQiLCJpYXQiOjE2MjQ0MjY2NzEsImV4cCI6MTYyNDUxMzA3MX0.xNZ-r4vJP6fTNXqDePb4rTpDTXDZ8VNCKrY2c4eusnI",
-						"type": "text"
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"postid\":\"60d290ce32e4c00015039a44\",\"operation\":\"update\",\"status\":\"adminrequest\"\r\n}",
+					"raw": "{\r\n    \"postid\": \"60d290ce32e4c00015039a44\",\r\n    \"operation\": \"update\",\r\n    \"status\": \"adminrequest\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -316,11 +324,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:4321/api/initiate-crud",
+					"raw": "https://rest-api-assignments.herokuapp.com/api/initiate-crud",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"rest-api-assignments",
+						"herokuapp",
+						"com"
 					],
-					"port": "4321",
 					"path": [
 						"api",
 						"initiate-crud"
