@@ -1,8 +1,7 @@
-# rest-api-assignments
-##### Requirement: [link](https://www.notion.so/Backend-Assignment-eac47d2e6e7544e2ac98d8ba117efd02)
+# rest-api-access-role
 
 ## API details:
-Live Hosted URL: https://rest-api-assignments.herokuapp.com/
+Live Hosted URL: https://rest-api-access-role.herokuapp.com/
 ### Setup
 ```
 npm install
@@ -26,19 +25,19 @@ Having role defined as
     .readOwn("posts")
     .grant("admin")
     .extend("user")
-    .updateAny("posts")
-    .deleteAny("posts")    
+    .updateAny("posts-a")
+    .deleteAny("posts-a")    
     .grant("superadmin")
     .extend("user")
-    .createAny("posts")
-    .readAny("posts")
-    .updateAny("posts")
-    .deleteAny("posts");
+    .createAny("posts-sa")
+    .readAny("posts-sa")
+    .updateAny("posts-sa")
+    .deleteAny("posts-sa");
   ```  
 Works with Access Control Middleware
 ```
 route.post("/api/action-crud",  userController.checkIfLoggedin,
-userController.grantAccess("createAny", "posts"), actionController.actionoperation);
+userController.grantAccess("createAny", "posts-sa"), actionController.actionoperation);
 
 ```
 ##### /api/signup
