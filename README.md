@@ -40,19 +40,6 @@ route.post("/api/action-crud",  userController.checkIfLoggedin,
 userController.grantAccess("createAny", "posts-sa"), actionController.actionoperation);
 
 ```
-##### /api/signup
-###### create User having role as USER, ADMIN and SUPER-ADMIN
-Response:
-
-![image](https://user-images.githubusercontent.com/44355278/122188261-6b4ffb80-cead-11eb-850d-0454b35b88ae.png)
-
-
-##### /api/login
-###### use to login created user of role either USER, ADMIN, SUPER-ADMIN and get access token. 
-Response:
-
-![image](https://user-images.githubusercontent.com/44355278/122188338-7c990800-cead-11eb-9e3c-fdd524152d7e.png)
-
 ##### /api/user/posts
 ###### access by user having role as USER
 API for Social Media Post Creation
