@@ -54,7 +54,7 @@ app.use(async function (req, res, next) {
 app.use("/", require("./app/routes/approutes"));
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Rest-API-Assignments." });
+  res.json({ message: "Welcome to Access based Rest-API ." });
 });
 
 //catch 404
