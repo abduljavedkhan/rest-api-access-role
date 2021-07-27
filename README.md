@@ -1,7 +1,5 @@
 # rest-api-access-role
 
-## API details:
-Live Hosted URL: https://rest-api-access-role.herokuapp.com/
 ### Setup
 ```
 npm install
